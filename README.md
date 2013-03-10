@@ -34,10 +34,10 @@
   - added assets files to folder \assets
 
 ## Browser Tested
-  - [Firefox](http://mzl.la/RNaI) v14
-  - [Internet Explorer](http://bit.ly/9fMgIQ) v9
-  - [Opera](http://bit.ly/fWJzaC) v12
-  - [Chrome](http://bit.ly/ePHvYZ) v25
+  - [Firefox](http://mzl.la/RNaI) v.14
+  - [Internet Explorer](http://bit.ly/9fMgIQ) v.9
+  - [Opera](http://bit.ly/fWJzaC) v.12
+  - [Chrome](http://bit.ly/ePHvYZ) v.25
 
 ## Credit
  - [Twitter Bootstrap](http://twitter.github.com/bootstrap/)
