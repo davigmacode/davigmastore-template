@@ -3,6 +3,7 @@
 ## Changelog
 
 ### 2013/03/10 Release v.2.0
+  - change repo name from 'ecommerce-template' to 'davigmastore-template'
   - remove all old files
   - change language to english
   - added new homepage with 3 column layout (index.html)
@@ -20,6 +21,7 @@
   - added tracking widget
   - added [bootstrap-select](http://caseyjhol.github.com/bootstrap-select/)
   - added [alertify.js](http://fabien-d.github.com/alertify.js/)
+  - added [blockUI](http://www.malsup.com/jquery/block/)
   
 ### 2013/03/05 Release v.1.0
   - added index.html
@@ -42,6 +44,7 @@
  - [Cosmo Theme](http://bootswatch.com/cosmo/)
  - [alertify.js](http://fabien-d.github.com/alertify.js/)
  - [bootstrap-select](http://caseyjhol.github.com/bootstrap-select/)
+ - [blockUI](http://www.malsup.com/jquery/block/)
 
 ## License
 
