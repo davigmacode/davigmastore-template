@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Products Name | Davigmastore</title>
+      <link type="text/css" rel="stylesheet" href="./assets/main/css/cosmo.min.css" media="screen">
+      <link type="text/css" rel="stylesheet" href="./assets/main/css/custom.frontend.css" media="screen">
+      <link type="text/css" rel="stylesheet" href="./assets/plugin/bootstrap-select/bootstrap-select.css" media="screen">
+      <link type="text/css" rel="stylesheet" href="./assets/plugin/alertify/alertify.core.css" media="screen">
+      <link type="text/css" rel="stylesheet" href="./assets/plugin/alertify/alertify.cosmo.css" media="screen">
+      <script type="text/javascript" src="./assets/main/js/jquery-1.8.3.min.js" charset="UTF-8"></script>
+   </head>
+   <body>
+      <div class="navbar navbar-fixed-top">
+         <div class="navbar-inner">
+            <div class="container">
+               <a href="./index.html" class="brand">DAVIGMASTORE</a>
+               <div id="main-menu" class="nav-collapse">
+                  <ul id="main-menu-left" class="nav">
+                     <li><a href="./index.html" title="beranda"><i class="icon-home icon-white"></i></a></li>
+                     <li id="preview-menu" class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">products <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                           <li><a href="./product_list.html">latest products</a></li>
+                           <li><a href="./product_list.html">feature products</a></li>
+                           <li><a href="./product_list.html">hot products</a></li>
+                           <li class="divider"></li>
+                           <li class="dropdown-submenu">
+                              <a href="#">by categories</a>
+                              <ul class="dropdown-menu">
+                                 <li><a href="#">category 001</a></li>
+                                 <li><a href="#">category 002</a></li>
+                                 <li><a href="#">category 003</a></li>
+                                 <li><a href="#">category 004</a></li>
+                                 <li class="dropdown-submenu">
+                                    <a href="#">category 005</a>
+                                    <ul class="dropdown-menu">
+                                       <li><a href="#">sub category 001</a></li>
+                                       <li><a href="#">sub category 002</a></li>
+                                       <li><a href="#">sub category 003</a></li>
+                                       <li><a href="#">sub category 004</a></li>
+                                       <li><a href="#">sub category 005</a></li>
+                                    </ul>
+                                 </li>
+                              </ul>
+                           </li>
+                           <li class="dropdown-submenu">
+                              <a href="#">by brands</a>
+                              <ul class="dropdown-menu">
+                                 <li><a href="#">brand 001</a></li>
+                                 <li><a href="#">brand 002</a></li>
+                                 <li><a href="#">brand 003</a></li>
+                                 <li><a href="#">brand 004</a></li>
+                                 <li><a href="#">brand 005</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li><a href="./about.html">about us</a></li>
+                     <li><a href="./contact.html">contact</a></li>
+                     <li><a href="./faq.html">faq</a></li>
+                  </ul>
+                  <div class="pull-right">
+                     <a id="action-show-cart" class="btn btn-danger" href="#"><i class="icon-shopping-cart icon-white"></i> <span id="item-count">5</span> item(s)</a>
+                     <a class="btn btn-primary" href="./login.html">Login</a>
+                     <a class="btn btn-success" href="./register.html">Register</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div id="myCarousel" class="carousel slide" style="margin-bottom:0">
+            <div class="carousel-inner">
+               <div class="item">
+                  <img src="http://placehold.it/960x200" alt="">
+               </div>
+               <div class="item">
+                  <img src="http://placehold.it/960x200" alt="">
+               </div>
+               <div class="item active">
+                  <img src="http://placehold.it/960x200" alt="">
+               </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+         </div>
+         <ul class="breadcrumb" style="margin-bottom:30px">
+            <li><a href="./index.html">Home</a> <span class="divider">/</span></li>
+            <li class="active">You are here</li>
+         </ul>
+         <div class="row">
+            <div class="span3">
+               <div class="dabox">
+                  <h3 class="btn-primary"><i class="pull-right icon-search icon-white"></i> Search</h3>
+                  <form style="margin: 0;">
+                     <div class="control-group">
+                        <label class="control-label" for="categories">Category</label>
+                        <div class="controls row-fluid">
+                           <select class="selectpicker span12">
+                              <option>category 001</option>
+                              <option>category 002</option>
+                              <option>category 003</option>
+                              <option>category 004</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="control-group">
+                        <label class="control-label" for="categories">Price Range</label>
+                        <div class="controls row-fluid">
+                           <select class="selectpicker span12">
+                              <option>< 500.000</option>
+                              <option selected>500.000 - 1.000.000</option>
+                              <option>1.500.000 - 2.000.000</option>
+                              <option>> 2.000.000</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="control-group">
+                        <label class="control-label" for="keyword">Keyword</label>
+                        <div class="controls row-fluid">
+                           <input type="text" name="keyword" placeholder="type your keyword here" class="span12">
+                        </div>
+                     </div>
+                     <button class="btn btn-block btn-primary" type="button">Begin Search</button>
+                  </form>
+               </div>
+               <div class="dabox">
+                  <h3 class="btn-info"><i class="pull-right icon-tags icon-white"></i> Categories</h3>
+                  <ul>
+                     <li><a href="#">category 001 <span class="pull-right badge badge-info">8</span></a></li>
+                     <li><a href="#">category 002 <span class="pull-right badge badge-info">8</span></a></li>
+                     <li><a href="#">category 003 <span class="pull-right badge badge-info">8</span></a></li>
+                     <li><a href="#">category 004 <span class="pull-right badge badge-info">8</span></a></li>
+                     <li><a href="#">category 005 <span class="pull-right badge badge-info">8</span></a></li>
+                  </ul>
+               </div>
+               <div class="dabox">
+                  <h3 class="btn-success"><i class="pull-right icon-tags icon-white"></i> Brands</h3>
+                  <ul>
+                     <li><a href="#">brand 001 <span class="pull-right badge badge-success">8</span></a></li>
+                     <li><a href="#">brand 002 <span class="pull-right badge badge-success">8</span></a></li>
+                     <li><a href="#">brand 003 <span class="pull-right badge badge-success">8</span></a></li>
+                     <li><a href="#">brand 004 <span class="pull-right badge badge-success">8</span></a></li>
+                     <li><a href="#">brand 005 <span class="pull-right badge badge-success">8</span></a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="span9">
+               <div class="page-header">
+                  <h1>&raquo; Products Name</h1>
+               </div>
+               <div class="row" style="margin-bottom:30px;">
+                  <div class="span5">
+                     <img src="http://placehold.it/360x300" class="img-polaroid">
+                  </div>
+                  <div class="span4">
+                     <table class="table">
+                        <tr>
+                           <td>Code</td>
+                           <td>ITEM-00345</td>
+                        </tr>
+                        <tr>
+                           <td>Price</td>
+                           <td>Rp.12.321.312</td>
+                        </tr>
+                        <tr>
+                           <td>Available</td>
+                           <td>Yes</td>
+                        </tr>
+                        <tr>
+                           <td>Category</td>
+                           <td>
+                              <a href="#">
+                                 Category 002
+                           </td>
+                           </td>
+                        </tr>
+                        <tr>
+                        <td>Brand</td>
+                        <td><a href="#">Brand 005</td></td>
+                        </tr>
+                        <tr>
+                        <td>Rating</td>
+                        <td>*****</td>
+                        </tr>
+                     </table>
+                     <div class="well input-prepend input-append">
+                     <span class="add-on">Qty</span>
+                     <input class="span1" type="text" value="1">
+                     <button class="btn btn-primary" type="button">Add to Cart</button>
+                     </div>
+                  </div>
+               </div>
+               <ul class="nav nav-tabs" id="details-tab">
+               <li class="active"><a href="#detail-description" data-toggle="tab">Descriptions</a></li>
+               <li><a href="#detail-images" data-toggle="tab">Images <span class="badge">7</span></a></li>
+               <li><a href="#detail-reviews" data-toggle="tab">Reviews <span class="badge">9</span></a></li>
+               <li><a href="#detail-related" data-toggle="tab">Related Product <span class="badge">5</span></a></li>
+               </ul>
+               <div class="tab-content">
+                  <div class="tab-pane active" id="detail-description">
+                     <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+                     <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien.</p>
+                     <p>Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui. Aenean ut</p>
+                  </div>
+                  <div class="tab-pane" id="detail-images">
+                     <ul class="thumbnails">
+                        <li class="span3">
+                           <a href="#" class="thumbnail">
+                           <img src="http://placehold.it/260x200">
+                           </a>
+                        </li>
+                        <li class="span3">
+                           <a href="#" class="thumbnail">
+                           <img src="http://placehold.it/260x200">
+                           </a>
+                        </li>
+                        <li class="span3">
+                           <a href="#" class="thumbnail">
+                           <img src="http://placehold.it/260x200">
+                           </a>
+                        </li>
+                        <li class="span3">
+                           <a href="#" class="thumbnail">
+                           <img src="http://placehold.it/260x200">
+                           </a>
+                        </li>
+                        <li class="span3">
+                           <a href="#" class="thumbnail">
+                           <img src="http://placehold.it/260x200">
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="tab-pane" id="detail-reviews">
+                     <div class="row-fluid">
+                        <form method="post" class="span12 well" action="#">
+                           <div class="control-group">
+                              <label class="control-label" for="message">Your Review</label>
+                              <div class="controls">
+                                 <textarea class="span12" name="message" rows="5"></textarea>
+                              </div>
+                           </div>
+                           <button type="submit" class="btn btn-primary">Send</button>
+                           <button type="reset" class="btn">Reset</button>
+                        </form>
+                     </div>
+                     <div class="media">
+                        <a class="pull-left" href="#">
+                        <img src="http://placehold.it/64x64">
+                        </a>
+                        <div class="media-body">
+                           <h4 class="media-heading">User Name</h4>
+                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                     </div>
+                     <div class="media">
+                        <a class="pull-left" href="#">
+                        <img src="http://placehold.it/64x64">
+                        </a>
+                        <div class="media-body">
+                           <h4 class="media-heading">User Name</h4>
+                           Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                           <div class="media">
+                              <a class="pull-left" href="#">
+                              <img src="http://placehold.it/64x64">
+                              </a>
+                              <div class="media-body">
+                                 <h4 class="media-heading">User Name</h4>
+                                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                 <div class="media">
+                                    <a class="pull-left" href="#">
+                                    <img src="http://placehold.it/64x64">
+                                    </a>
+                                    <div class="media-body">
+                                       <h4 class="media-heading">User Name</h4>
+                                       Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="tab-pane" id="detail-related">
+                     <ul class="thumbnails">
+                        <li class="span3">
+                           <div class="thumbnail">
+                              <h3 class="btn-success">Product Name</h3>
+                              <img src="http://placehold.it/260x180" alt="" />
+                              <div class="action btn-primary">
+                                 <div class="btn-group">
+                                    <a href="./product_detail.html" class="btn btn-warning" title="product detail"><i class="icon-search icon-white"></i></a>
+                                    <a href="#" class="btn btn-warning action-add-item" title="add to cart"><i class="icon-shopping-cart icon-white"></i></a>
+                                 </div>
+                                 &nbsp;Rp999.999.999.999
+                              </div>
+                           </div>
+                        </li>
+                        <li class="span3">
+                           <div class="thumbnail">
+                              <h3 class="btn-success">Product Name</h3>
+                              <img src="http://placehold.it/260x180" alt="" />
+                              <div class="action btn-primary">
+                                 <div class="btn-group">
+                                    <a href="./product_detail.html" class="btn btn-warning" title="product detail"><i class="icon-search icon-white"></i></a>
+                                    <a href="#" class="btn btn-warning action-add-item" title="add to cart"><i class="icon-shopping-cart icon-white"></i></a>
+                                 </div>
+                                 &nbsp;Rp999.999.999.999
+                              </div>
+                           </div>
+                        </li>
+                        <li class="span3">
+                           <div class="thumbnail">
+                              <h3 class="btn-success">Product Name</h3>
+                              <img src="http://placehold.it/260x180" alt="" />
+                              <div class="action btn-primary">
+                                 <div class="btn-group">
+                                    <a href="./product_detail.html" class="btn btn-warning" title="product detail"><i class="icon-search icon-white"></i></a>
+                                    <a href="#" class="btn btn-warning action-add-item" title="add to cart"><i class="icon-shopping-cart icon-white"></i></a>
+                                 </div>
+                                 &nbsp;Rp999.999.999.999
+                              </div>
+                           </div>
+                        </li>
+                        <li class="span3">
+                           <div class="thumbnail">
+                              <h3 class="btn-success">Product Name</h3>
+                              <img src="http://placehold.it/260x180" alt="" />
+                              <div class="action btn-primary">
+                                 <div class="btn-group">
+                                    <a href="./product_detail.html" class="btn btn-warning" title="product detail"><i class="icon-search icon-white"></i></a>
+                                    <a href="#" class="btn btn-warning action-add-item" title="add to cart"><i class="icon-shopping-cart icon-white"></i></a>
+                                 </div>
+                                 &nbsp;Rp999.999.999.999
+                              </div>
+                           </div>
+                        </li>
+                        <li class="span3">
+                           <div class="thumbnail">
+                              <h3 class="btn-success">Product Name</h3>
+                              <img src="http://placehold.it/260x180" alt="" />
+                              <div class="action btn-primary">
+                                 <div class="btn-group">
+                                    <a href="./product_detail.html" class="btn btn-warning" title="product detail"><i class="icon-search icon-white"></i></a>
+                                    <a href="#" class="btn btn-warning action-add-item" title="add to cart"><i class="icon-shopping-cart icon-white"></i></a>
+                                 </div>
+                                 &nbsp;Rp999.999.999.999
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /.container -->
+      <div class="dafooter">
+         <div class="container">
+            <div class="row">
+               <div class="span8">
+                  &copy; 2013 e-commerce starter template powered by <a href="http://twitter.github.com/bootstrap" target="_blank">twitter bootstrap</a> and <a href="http://bootswatch.com/cosmo" target="_blank" class="text-success">cosmo theme</a>
+               </div>
+               <div class="span4">
+                  <span class="pull-right">designed by <a target="_blank" href="http://github.com/davigmacode" class="text-warning">davigmacode</a></span>
+               </div>
+            </div>
+            <!-- /.row -->
+         </div>
+         <!-- /.container -->
+      </div>
+      <!-- /.dafooter -->
+      <div id="cart-modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">&raquo; Shoping Cart</h3>
+         </div>
+         <div class="modal-body">
+            <style type="text/css">.table tr td{vertical-align: middle;}</style>
+            <table class="table" style="margin-bottom:0">
+               <thead>
+                  <tr class="btn-primary">
+                     <th></th>
+                     <th>Product Name</th>
+                     <th>Qty</th>
+                     <th>Price</th>
+                     <th>Total</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><button type="button" class="close">×</button></td>
+                     <td>product name 001</td>
+                     <td><input type="text" style="margin:0;width:50px" value="3"></td>
+                     <td>Rp.12.321.312</td>
+                     <td>Rp.12.321.312</td>
+                  </tr>
+                  <tr>
+                     <td><button type="button" class="close">×</button></td>
+                     <td>product name 002</td>
+                     <td><input type="text" style="margin:0;width:50px" value="3"></td>
+                     <td>Rp.12.321.312</td>
+                     <td>Rp.12.321.312</td>
+                  </tr>
+                  <tr>
+                     <td><button type="button" class="close">×</button></td>
+                     <td>product name 003</td>
+                     <td><input type="text" style="margin:0;width:50px" value="3"></td>
+                     <td>Rp.12.321.312</td>
+                     <td>Rp.12.321.312</td>
+                  </tr>
+                  <tr>
+                     <td><button type="button" class="close">×</button></td>
+                     <td>product name 004</td>
+                     <td><input type="text" style="margin:0;width:50px" value="3"></td>
+                     <td>Rp.12.321.312</td>
+                     <td>Rp.12.321.312</td>
+                  </tr>
+                  <tr>
+                     <td><button type="button" class="close">×</button></td>
+                     <td>product name 005</td>
+                     <td><input type="text" style="margin:0;width:50px" value="3"></td>
+                     <td>Rp.12.321.312</td>
+                     <td>Rp.12.321.312</td>
+                  </tr>
+                  <tr class="success">
+                     <td colspan="4" align="right">Total</td>
+                     <td>Rp.12.321.312</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class="modal-footer">
+            <button class="btn btn-warning">Update</button>
+            <button class="btn btn-primary">Checkout</button>
+            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+         </div>
+      </div>
+      <script type="text/javascript" src="./assets/main/js/bootstrap.min.js" charset="UTF-8"></script>
+      <script type="text/javascript" src="./assets/plugin/bootstrap-select/bootstrap-select.js" charset="UTF-8"></script>
+      <script type="text/javascript" src="./assets/plugin/blockui/jquery.blockUI.js" charset="UTF-8"></script>
+      <script type="text/javascript" src="./assets/plugin/alertify/alertify.min.js" charset="UTF-8"></script>
+      <SCRIPT type="text/javascript">
+         $(document).ready(function(){
+         
+         	$('ul.nav li.dropdown').hover(
+         		function() { 
+         			$(this).closest('.dropdown-menu').stop(true, true).show(); 
+         			$(this).addClass('open'); 
+         		}, 
+         		function() { 
+         			$(this).closest('.dropdown-menu').stop(true, true).hide();
+         			$(this).removeClass('open'); 
+         		}
+         	);
+         
+         	$('.carousel').carousel();
+         
+         	$('.selectpicker').selectpicker();
+         
+         	$("#action-show-cart").bind("click", function(e) {
+         		e.preventDefault();
+         		$.blockUI({
+         			showOverlay: false, 
+         			message: "<img src='./assets/main/img/loading.gif' />", 
+         			css: {
+         				top:  ($(window).height() - 30) /2 + 'px', 
+                       			left: ($(window).width() - 80) /2 + 'px',
+         				width: '80px',
+         				border: 'none',
+         				padding: '13px',
+         				'-webkit-border-radius': '10px',
+         				'-moz-border-radius': '10px',
+         				opacity: .7,
+         				color: '#fff'
+         			}
+         		});
+         		setTimeout(function(){$('#cart-modal').modal('show')}, 1000);
+         		$.unblockUI();
+         		return false;
+         	});
+         
+         	$(".action-add-item").bind("click", function(e) {
+         		e.preventDefault();
+         		alertify.prompt("Quantity", function (e, str) {
+         			// str is the input text
+         			if (e) {
+         				var count = parseInt($('#item-count').text()) + parseInt(str);
+         				$('#item-count').text(count)
+         				alertify.success("New item added to cart");
+         			} else {
+         				alertify.error("Okay");
+         			}
+         		}, "1");
+         		return false;
+         	});
+         
+         });
+         
+      </SCRIPT>
+   </body>
+</html>
