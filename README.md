@@ -22,10 +22,18 @@
   - added [alertify.js](http://fabien-d.github.com/alertify.js/)
   
 ### 2013/03/05 Release v.1.0
+  - added index.html
+  - added product_pilihan.html
+  - added product_terbaru.html
+  - added product_terlaris.html
+  - added product_tentang.html
+  - added product_kontak.html
+  - added product_bantuan.html
+  - added assets files to folder \assets
 
 ## Browser Tested
   - [Firefox](http://mzl.la/RNaI) v14
-  - [Internet Explorer](http://bit.ly/9fMgIQ) v11
+  - [Internet Explorer](http://bit.ly/9fMgIQ) v9
   - [Opera](http://bit.ly/fWJzaC) v12
   - [Chrome](http://bit.ly/ePHvYZ) v25
 
