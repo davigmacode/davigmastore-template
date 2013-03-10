@@ -6,6 +6,7 @@
   - change repo name from 'ecommerce-template' to 'davigmastore-template'
   - remove all old files
   - change language to english
+  - added new assets files to folder \assets
   - added new homepage with 3 column layout (index.html)
   - added list product page (product_list.html)
   - added detail product page (product_detail.html)
